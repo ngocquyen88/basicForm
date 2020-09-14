@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Tạo form đơn giản</title>
+</head>
+<body>
+
+<form method="post" class="lx">
+    <!-- Tạo form Sở thích của bạn-->
+    <fieldset><span style="margin: 0px">
+        <legend><p align="center"><span style="color:white;background-color:#ffa500;font-size:30px">SỞ THÍCH CỦA BẠN</span> </p></legend>
+    <label><span style="color:blue">Họ và tên</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="yourname" name="yourname" size="50px"/><br/><br/>
+    <label><span style="color:blue">Email</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="email" name="email" size="50px"/><br/><br/>
+    <label><span style="color:blue">Sở thích</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label><input name="sothich" value="thethao" type="checkbox">Thể thao</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><input name="sothich" value="amnhac" type="checkbox">Âm nhạc</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <label><input name="sothich" value="docsach" type="checkbox">Đọc sách</label><br/><br/>
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="sothich" value="luotweb" type="checkbox">Lướt web</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><input name="sothich" value="choigame" type="checkbox">Chơi game</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><input name="sothich" value="dienanh" type="checkbox">Điện ảnh</label><br/><br/>
+<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="sothich" value="dulich" type="checkbox">Du lịch</label>
+    <p align="center"><input type="submit" name="btnSubmit" value="Gửi thông tin"/><br/><br/>
+       <input type="reset" name="btnReset" value="Nhập lại"/><br/>
+    </p>
+    </span></fieldset>
+    <br/><br/><br/><br/>
+
+    <!-- Tạo form Đăng ký học viên -->
+    <fieldset><span style="margin: 0px">
+        <legend><p><span style="color:blue;background-color:aquamarine;font-size:30px">ĐĂNG KÝ HỌC VIÊN</span> </p></legend>
+ <label><span style="color:blue">Họ và tên</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="hoten" name="hoten" size="50px"/><br/><br/>
+    <label><span style="color:blue">Ngày sinh</span></label>&nbsp;&nbsp;&nbsp;
+    <input type="text" id="ngaysinh" name="ngaysinh" size="50px"/><br/><br/>
+        <label><span style="color:blue">Giới tính</span></label>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nam<input type="radio" name="gioitinh" value="Nam"/></label>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nữ<input type="radio" name="gioitinh" value="Nữ"/></label>
+        <!--
+    <p align="center"><input type="submit" name="btnSubmit" value="Gửi thông tin"/><br/><br/>
+       <input type="reset" name="btnReset" value="Nhập lại"/><br/>
+    </p>
+    -->
+        <br/><br/>
+        <label><span style="color:blue">Địa chỉ</span></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea cols="52" rows="4"></textarea><br/><br/>
+        <label><span style="color:blue">Lớp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
+        <select name="chonlop">
+            <option value="lopA">Lớp A</option>
+            <option value="lopB">Lớp B</option>
+            <option value="lopC">Lớp C</option>
+            <option value="lopD">Lớp D</option>
+            <option value="lopE">Lớp E</option>
+        </select>
+        <br/><br/>
+        <label><span style="color:blue">Email</span></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="thudt" size="50px"/>
+        <br/><br/>
+        <label><span style="color:blue">Điện thoại</span></label>
+        &nbsp;&nbsp;&nbsp;<input type="text" name="sdt" size="50px"/>
+
+        <br/><br/>
+        <div align="center">
+        <button type="submit">Đăng ký</button><br/><br/>
+        <button type="reset">Nhập lại</button>
+</div>
+
+
+    </span></fieldset>
+
+    <style>
+        .lx{
+            width:50%;
+            margin:0px;
+        }
+    </style>
+</form>
+</body>
+</html>
